@@ -1,5 +1,0 @@
-Model,Accuracy,Precision (Macro),Recall (Macro),F1-Score (Macro)
-Bidirectional RNN + TF-IDF,0.5877,0.5624,0.5921,0.5485
-Bidirectional RNN + Word2Vec (Skip-gram),0.5783,0.4727,0.4501,0.4415
-Bidirectional RNN + Word2Vec (CBOW),0.5278,0.5476,0.5201,0.4014
-Bidirectional RNN + GloVe,0.6108,0.5875,0.6167,0.5818
