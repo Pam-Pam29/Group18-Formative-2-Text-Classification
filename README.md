@@ -1,7 +1,6 @@
-# Text Classification with BiRNN and Multiple Word Embeddings
+# Text Classification with Different Architectures and Multiple Word Embeddings
 
-**Comparative Analysis of Bidirectional Recurrent Neural Networks Across Different Word Embedding Techniques**
-
+**Comparative Analysis of Different Architectures Across Different Word Embedding Techniques**
 
 
 ##  Project Overview
@@ -32,9 +31,9 @@ This project implements and evaluates **Different Architectures** for text class
 
 ##  Dataset
 
-**Dataset Name:** [Financial Sentiment Analysis]
+**Dataset Name:** Financial Sentiment Analysis
 
-**Source:** [ Kaggle]
+**Source:**  Kaggle
 
 **Description:** 
 - **Task:** Text Classification (3 classes: Negative, Neutral, Positive)
@@ -98,37 +97,16 @@ seaborn==0.12.2
 
 ### 1. TF-IDF (Term Frequency-Inverse Document Frequency)
 - **Type:** Traditional sparse representation
-- **Dimensions:** 3000 features
-- **Configuration:**
-  - Max features: 3000
-  - N-gram range: (1, 2)
-  - Min document frequency: 2
-  - Max document frequency: 0.8
-- **Note:** Reshaped to (50, 60) for BiRNN compatibility
 
 ### 2. Skip-gram (Word2Vec)
 - **Type:** Predictive embedding (context → word)
-- **Dimensions:** 100
-- **Training:**
-  - Window size: 5
-  - Min count: 2
-  - Epochs: 10
-  - Algorithm: CBOW=0 (Skip-gram)
-- **Vocabulary:** Custom-trained on dataset
 
 ### 3. CBOW (Continuous Bag of Words)
 - **Type:** Predictive embedding (word → context)
-- **Dimensions:** 100
-- **Training:**
-  - Window size: 5
-  - Min count: 2
-  - Epochs: 10
-  - Algorithm: CBOW=1
 - **Vocabulary:** Custom-trained on dataset
 
 ### 4. GloVe (Global Vectors)
 - **Type:** Count-based pre-trained embedding
-- **Dimensions:** 300
 - **Source:** Stanford GloVe 6B
 - **Pre-trained on:** Wikipedia 2014 + Gigaword 5
 - **Coverage:** ~400k words
@@ -178,10 +156,10 @@ This project is for academic purposes only. Dataset and code usage subject to or
 
 ##  Acknowledgments
 
-- Course Instructor: [Kevin]
+- Course Instructor: Kevin
 
 - Stanford NLP Group for GloVe embeddings
-- [Dataset Source] for providing the dataset
+- Kaggle for providing the dataset
 
 ---
 
