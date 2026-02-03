@@ -163,23 +163,6 @@ This project is for academic purposes only. Dataset and code usage subject to or
 
 ---
 
-##  Citation
-
-If you use this work, please cite:
-
-```bibtex
-@misc{birnn_text_classification_2025,
-  title={Comparative Analysis of BiRNN with Multiple Word Embeddings for Text Classification},
-  author={[Your Names]},
-  year={2025},
-  institution={[Your University]},
-  course={[Course Code]}
-}
-```
-
----
-
-
 **Course:** [Machine Learning Techniques 1]
 
 **Semester:** [January 2026]
