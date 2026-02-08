@@ -1,0 +1,84 @@
+{
+  "model": "Bidirectional LSTM + Word2Vec Skip-gram",
+  "architecture": {
+    "type": "Bidirectional LSTM",
+    "embedding": "Word2Vec Skip-gram",
+    "layers": [
+      "Embedding (Word2Vec initialized)",
+      "Bidirectional LSTM (128 units)",
+      "Bidirectional LSTM (64 units)",
+      "Dense (64 units)",
+      "Dense (32 units)",
+      "Output (3 units)"
+    ]
+  },
+  "performance": {
+    "test_accuracy": 0.5731394290924072,
+    "test_loss": 0.8535784482955933,
+    "macro_f1": 0.5393109106770876,
+    "weighted_f1": 0.5962288981968507
+  },
+  "confusion_matrix": [
+    [
+      98,
+      32,
+      42
+    ],
+    [
+      141,
+      357,
+      128
+    ],
+    [
+      110,
+      46,
+      215
+    ]
+  ],
+  "classification_report": {
+    "0": {
+      "precision": 0.2808022922636103,
+      "recall": 0.5697674418604651,
+      "f1-score": 0.3761996161228407,
+      "support": 172
+    },
+    "1": {
+      "precision": 0.8206896551724138,
+      "recall": 0.5702875399361023,
+      "f1-score": 0.6729500471253534,
+      "support": 626
+    },
+    "2": {
+      "precision": 0.5584415584415584,
+      "recall": 0.5795148247978437,
+      "f1-score": 0.5687830687830688,
+      "support": 371
+    },
+    "accuracy": 0.5731394290924072,
+    "macro avg": {
+      "precision": 0.5533111686258608,
+      "recall": 0.5731899355314704,
+      "f1-score": 0.5393109106770876,
+      "support": 1169
+    },
+    "weighted avg": {
+      "precision": 0.6580252665432763,
+      "recall": 0.5731394354148845,
+      "f1-score": 0.5962288981968507,
+      "support": 1169
+    }
+  },
+  "training_history": {
+    "epochs_trained": 21,
+    "final_train_accuracy": 0.8935259580612183,
+    "final_val_accuracy": 0.6620320677757263,
+    "best_val_accuracy": 0.6759358048439026
+  },
+  "configuration": {
+    "embedding_dim": 100,
+    "sequence_length": 100,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "class_weights": "{0: 2.264050387596899, 1: 0.6220713525026624, 2: 1.0517668242178708}"
+  }
+}

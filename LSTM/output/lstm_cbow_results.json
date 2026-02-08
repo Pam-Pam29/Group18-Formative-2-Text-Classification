@@ -1,0 +1,84 @@
+{
+  "model": "Bidirectional LSTM + Word2Vec CBOW",
+  "architecture": {
+    "type": "Bidirectional LSTM",
+    "embedding": "Word2Vec CBOW",
+    "layers": [
+      "Embedding (Word2Vec initialized)",
+      "Bidirectional LSTM (128 units)",
+      "Bidirectional LSTM (64 units)",
+      "Dense (64 units)",
+      "Dense (32 units)",
+      "Output (3 units)"
+    ]
+  },
+  "performance": {
+    "test_accuracy": 0.5431993007659912,
+    "test_loss": 0.8830224871635437,
+    "macro_f1": 0.4912072852313216,
+    "weighted_f1": 0.5603949180561331
+  },
+  "confusion_matrix": [
+    [
+      110,
+      39,
+      23
+    ],
+    [
+      176,
+      411,
+      39
+    ],
+    [
+      162,
+      95,
+      114
+    ]
+  ],
+  "classification_report": {
+    "0": {
+      "precision": 0.24553571428571427,
+      "recall": 0.6395348837209303,
+      "f1-score": 0.3548387096774194,
+      "support": 172
+    },
+    "1": {
+      "precision": 0.7541284403669725,
+      "recall": 0.6565495207667732,
+      "f1-score": 0.7019641332194705,
+      "support": 626
+    },
+    "2": {
+      "precision": 0.6477272727272727,
+      "recall": 0.30727762803234504,
+      "f1-score": 0.41681901279707495,
+      "support": 371
+    },
+    "accuracy": 0.5431993007659912,
+    "macro avg": {
+      "precision": 0.5491304757933199,
+      "recall": 0.5344540108400161,
+      "f1-score": 0.4912072852313216,
+      "support": 1169
+    },
+    "weighted avg": {
+      "precision": 0.6455289689552488,
+      "recall": 0.5431993156544055,
+      "f1-score": 0.5603949180561331,
+      "support": 1169
+    }
+  },
+  "training_history": {
+    "epochs_trained": 33,
+    "final_train_accuracy": 0.909042239189148,
+    "final_val_accuracy": 0.6342245936393738,
+    "best_val_accuracy": 0.6524063944816589
+  },
+  "configuration": {
+    "embedding_dim": 100,
+    "sequence_length": 100,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "class_weights": "{0: 2.264050387596899, 1: 0.6220713525026624, 2: 1.0517668242178708}"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "model": "Bidirectional LSTM + TF-IDF",
+  "architecture": {
+    "type": "Bidirectional LSTM",
+    "embedding": "TF-IDF",
+    "layers": [
+      "Bidirectional LSTM (128 units)",
+      "Bidirectional LSTM (64 units)",
+      "Dense (64 units)",
+      "Dense (32 units)",
+      "Output (3 units)"
+    ]
+  },
+  "performance": {
+    "test_accuracy": 0.5474764704704285,
+    "test_loss": 0.9384596347808838,
+    "macro_f1": 0.4458045079723994,
+    "weighted_f1": 0.5293621050373958
+  },
+  "confusion_matrix": [
+    [
+      44,
+      93,
+      35
+    ],
+    [
+      64,
+      477,
+      85
+    ],
+    [
+      56,
+      196,
+      119
+    ]
+  ],
+  "classification_report": {
+    "0": {
+      "precision": 0.2682926829268293,
+      "recall": 0.2558139534883721,
+      "f1-score": 0.2619047619047619,
+      "support": 172
+    },
+    "1": {
+      "precision": 0.6227154046997389,
+      "recall": 0.7619808306709265,
+      "f1-score": 0.6853448275862069,
+      "support": 626
+    },
+    "2": {
+      "precision": 0.497907949790795,
+      "recall": 0.32075471698113206,
+      "f1-score": 0.3901639344262295,
+      "support": 371
+    },
+    "accuracy": 0.5474764704704285,
+    "macro avg": {
+      "precision": 0.46297201247245434,
+      "recall": 0.4461831670468102,
+      "f1-score": 0.4458045079723994,
+      "support": 1169
+    },
+    "weighted avg": {
+      "precision": 0.5309581130691498,
+      "recall": 0.5474764756201882,
+      "f1-score": 0.5293621050373958,
+      "support": 1169
+    }
+  },
+  "training_history": {
+    "epochs_trained": 30,
+    "final_train_accuracy": 0.5371856689453125,
+    "final_val_accuracy": 0.5090909004211426,
+    "best_val_accuracy": 0.5561497211456299
+  },
+  "configuration": {
+    "tfidf_max_features": 3000,
+    "tfidf_ngram_range": "(1, 2)",
+    "sequence_length": 50,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "class_weights": "{0: 2.264050387596899, 1: 0.6220713525026624, 2: 1.0517668242178708}"
+  },
+  "note": "TF-IDF not optimal for LSTM - included for comparative analysis"
+}
