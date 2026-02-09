@@ -18,9 +18,9 @@ This project implements and evaluates **Different Architectures** for text class
 
 | Team Member | Model Assignment | Embeddings Tested | 
 |-------------|-----------------|-------------------|
-| **Victoria Fakunle** | BiRNN (Bidirectional RNN) | 
+| **Victoria Fakunle** | BiRNN (Bidirectional RNN) | TF-IDF,Skip-gram,CBOW,Glove
 | **MUGISHA Samuel** | LSTM | TF-IDF, Skip-gram, CBOW | 
-| **NIWEMWANA Aline Innocente** | Traditional Model | 
+| **NIWEMWANA Aline Innocente** | Traditional Model |TF-IDF,Skip-gram,CBOW 
 | **GATWAZA Jean Robert** | GRU | TF-IDF, CBOW, GloVe | 
 
 
