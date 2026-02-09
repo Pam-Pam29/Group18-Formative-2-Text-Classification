@@ -8,7 +8,7 @@
 This project implements and evaluates **Different Architectures** for text classification using multiple word embedding techniques. The goal is to conduct a comparative analysis to understand how different embedding methods impact model performance on sentiment classification tasks.
 
 ### Research Questions
-1. How do different word embedding techniques (TF-IDF, Skip-gram, CBOW, GloVe) affect BiRNN performance?
+1. How do different word embedding techniques (TF-IDF, Skip-gram, CBOW, GloVe) affect Model performance?
 2. Which embedding method provides the best semantic representation for sentiment analysis?
 3. What are the computational trade-offs between different embedding approaches?
 
@@ -16,12 +16,12 @@ This project implements and evaluates **Different Architectures** for text class
 
 ##  Team Members & Contributions
 
-| Team Member | Model Assignment | Embeddings Tested | Key Contributions |
-|-------------|-----------------|-------------------|-------------------|
-| **Victoria Fakunle** | BiRNN (Bidirectional RNN) | TF-IDF, Skip-gram, CBOW, GloVe | Model implementation, hyperparameter tuning, results analysis |
-| **MUGISHA Samuel** | LSTM | TF-IDF, Skip-gram, CBOW | [Contributions] |
-| **NIWEMWANA Aline Innocente** | Traditional Model | TF-IDF, Skip-gram, GloVe | [Contributions] |
-| **GATWAZA Jean Robert** | GRU | TF-IDF, CBOW, GloVe | [Contributions] |
+| Team Member | Model Assignment | Embeddings Tested | 
+|-------------|-----------------|-------------------|
+| **Victoria Fakunle** | BiRNN (Bidirectional RNN) | 
+| **MUGISHA Samuel** | LSTM | TF-IDF, Skip-gram, CBOW | 
+| **NIWEMWANA Aline Innocente** | Traditional Model | 
+| **GATWAZA Jean Robert** | GRU | TF-IDF, CBOW, GloVe | 
 
 
 
@@ -56,27 +56,6 @@ This project implements and evaluates **Different Architectures** for text class
 - CUDA-capable GPU (recommended for training)
 - 8GB+ RAM
 
-### Setup
-
-1. **Clone the repository:**
-
-2. **Create virtual environment:**
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-3. **Install dependencies:**
-```bash
-pip install -r requirements.txt
-```
-
-4. **Download GloVe embeddings:**
-```bash
-# Download GloVe 6B 300d
-wget http://nlp.stanford.edu/data/glove.6B.zip
-unzip glove.6B.zip -d data/embeddings/
-```
 
 ### Dependencies
 ```
@@ -93,7 +72,7 @@ seaborn==0.12.2
 
 ---
 
-##  Word Embeddings Explored
+## Some Word Embeddings Explored
 
 ### 1. TF-IDF (Term Frequency-Inverse Document Frequency)
 - **Type:** Traditional sparse representation
